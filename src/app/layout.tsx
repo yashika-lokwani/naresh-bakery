@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icons/favicon-96x96.png" />
+        <link rel="icon" href="/icons/apple-touch-icon.png" />
         <meta name="theme-color" content="#ec2127" id="theme-color-meta"></meta>
       </head>
       <body className={outfit.variable}>
