@@ -14,7 +14,7 @@ export default function MainContent({}: MainContentProps) {
       <ScrollFadeObserver />
       <main className={styles.mainContent}>
         <div className={styles.headingText}>
-          <h6>Celebrate Sweet Moments<br/> with Naresh Bakery!</h6>
+          <h6>Celebrate Sweet Moments<br/> with Naresh Bakers!</h6>
           {/* <br />
           <span>
             From birthdays to weddings, every occasion deserves a slice of
