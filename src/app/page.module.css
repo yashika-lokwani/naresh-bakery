@@ -1,0 +1,15 @@
+.page {
+  /* font-family: var(--font-geist-sans); */
+  position: relative;
+}
+
+.mainHeading {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background-color: #ffffffcc;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}

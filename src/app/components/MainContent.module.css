@@ -1,0 +1,153 @@
+.mainContent {
+  padding: min(5vw, 20px);
+}
+
+.headingText {
+  text-align: center;
+}
+
+.headingText h6 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.headingText span {
+  text-align: center;
+  font-size: 1em;
+}
+
+.cakesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0; /* Remove gap since you have margin on cards */
+}
+
+.cakeCard {
+  color: #fff;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  margin: 16px;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  min-width: 350px;
+  border: 1px solid #2a2929;
+  box-sizing: border-box;
+}
+
+.cakeImageContainer {
+  color: #fff;
+  width: 100%;
+  min-height: 210px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cakeImageContainer img {
+  object-position: center;
+  box-sizing: border-box;
+  padding: 4px 10px 0 10px;
+  overflow: hidden;
+}
+
+.cakeImage:hover {
+  transform: scale(1.05);
+}
+
+.cakeContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cakeName {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 8px 0;
+  padding: 0 0.5em;
+  color: #fff;
+  margin: 0px 0px 8px 0;
+}
+
+.cakeDescription {
+  color: #fff;
+  margin: 8px 0;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.cakePrice {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin: 8px 0;
+}
+
+.cakeFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .headingText h6 {
+    font-size: 1.3em;
+    margin: 0;
+  }
+
+  .headingText span {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 768px) {
+  .headingText h6 {
+    font-size: 2em;
+  }
+}
+/* Scroll-based fade animation */
+.fadeOnScroll {
+  opacity: 0;
+  transform: translateY(40px) scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  animation: fadeInOnScroll linear both;
+  animation-timeline: view();
+  animation-range: entry 0% entry 80%;
+}
+
+@keyframes fadeInOnScroll {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Fallback for browsers that don't support scroll-timeline */
+@supports not (animation-timeline: view()) {
+  .fadeOnScroll {
+    animation: none;
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    transition: opacity 1.8s ease, transform 0.8s ease;
+  }
+
+  .fadeOnScroll.animate-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
