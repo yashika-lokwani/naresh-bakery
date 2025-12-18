@@ -45,6 +45,7 @@ export default async function ItemDetail({ params }: ItemDetailProps) {
               alt={`${category.name} ${itemIndex + 1}`}
             />
           </div>
+          <span className={styles.cakeIndex}>{itemIndex < 9 ? `0${itemIndex + 1}` : itemIndex + 1}</span>
           {/* <Suspense fallback={<span>Loading...</span>}>
             <Image
               src={`/categories/${category.image}/${category.image}-${itemIndex}.png`}

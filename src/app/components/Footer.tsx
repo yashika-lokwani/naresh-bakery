@@ -28,7 +28,7 @@ export default function Footer({}: FooterProps) {
           </a>
         </div>
       </div>
-      <p className={styles.copyright}>© Nareshbakery. All Right Reserved</p>
+      <p className={styles.copyright}>© Naresh Bakers. All Right Reserved</p>
     </footer>
   );
 }

@@ -85,3 +85,18 @@
     font-size: 16px;
   }
 }
+.cakeIndex {
+  background-color: #000000;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-family: Outfit;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}

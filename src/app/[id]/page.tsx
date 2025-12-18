@@ -65,6 +65,7 @@ export default async function CakeDetail({ params }: CakeDetailProps) {
                       alt={`${cake.name} ${imageIndex + 1}`}
                     />
                   </div>
+                  <span className={styles.cakeIndex}>{imageIndex < 9 ? `0${imageIndex + 1}` : imageIndex + 1}</span>
                 </Link>
               ))
             )}
